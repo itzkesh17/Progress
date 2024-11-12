@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Crimson Text";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #384B70;
+}
+.container{
+    position: relative;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #10375C;
+}
+.skill{
+    background-color: yellow;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-image: conic-gradient(yellow 5deg, #F3C623 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 4px, rgba(0, 0, 0, 0.3) 4px 9px 13px -3px, rgba(0, 0, 0, 0.2) 2px -3px 0px inset;
+}
+.skill::before{
+    content: " ";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.percentage{
+    position: absolute;
+    z-index: 1;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: "Crimson Text";
+}
+.title{
+    font-size: 25px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+@media screen and (max-width:450px){
+    .container{
+        width: 250px;
+        height: 280px;
+        margin:50px;
+    }
+    .skill{
+        background-color: yellow;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background-image: conic-gradient(yellow 5deg, #F3C623 0deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 4px, rgba(0, 0, 0, 0.3) 4px 9px 13px -3px, rgba(0, 0, 0, 0.2) 2px -3px 0px inset;
+    }
+    .skill::before{
+        content: " ";
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        background-color: aliceblue;
+        border-radius: 50%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
